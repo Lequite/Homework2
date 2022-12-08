@@ -13,18 +13,26 @@
 
 
 // Задание 2:
-// Console.Write("Введите Ваше число: ");
-// int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите Ваше число: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-// void Test(){
-//     if(n > 99)
-// {
-//     Console.WriteLine((n / 10) % 10);
-// }
-//     else
-//     Console.WriteLine("Третье число не найдено.");
-// }
-// Test();
+void Test(){
+    if(n > 99 && n < 999)
+{
+    Console.WriteLine(n % 10);
+}
+    else if(n > 999 && n < 9999)
+{
+    Console.WriteLine((n / 10) % 10);
+}
+else if(n > 9999 && n < 99999)
+{
+    Console.WriteLine((n / 100) % 10);
+}
+    else
+    Console.WriteLine("Третье число не найдено.");
+}
+Test();
 
 
 
